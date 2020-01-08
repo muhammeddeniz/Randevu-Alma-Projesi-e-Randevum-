@@ -1,0 +1,176 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>eRandevum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http.equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <header>
+
+        <div class="collapse bg-watning" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-black">Hakkımızda</h4>
+                        <p class="text-muted">Bu web siteyi randevu alma işlemlerine kolaylık getirilmesi
+                            açısından aşağıda adı bulunan iki genç yazılımcı tarafından oluşturuldu.
+                        </p>
+                        <p class="text-muted">Muhammed DENİZ</p>
+                        <p class="text-muted">Tunay TOKSÖZ</p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-black">İletişim</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-muted"><img src="./public/twitter.png" alt=""> Bizi Twitterdan
+                                    Takip Edin</a> </li><br>
+                            <li><a href="#" class="text-muted"><img src="./public/facebook.png" alt=""> Bizi Facebooktan
+                                    Beğenin</a></li><br>
+                            <li><a href="#" class="text-muted"><img src="./public/instagram.png" alt=""> Bizi
+                                    İnstagramdan Takip Edin</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-primary">
+            <!--  Ana sayfa resimi   -->
+            <a href="/anaSayfa"><img src="../public/img.png"
+                    style="width: 30px; height: 30px; float: left; padding: 0; margin: 0;"></a>
+            <a href="/anaSayfa" class="navbar-brand d-flex align-items-center">
+                <strong>E-Randevum</strong>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </header>
+
+
+
+    <div class="container col-sm-4 col-md-7 col-lg-4 mt-5" style="float: left; padding-left: 80px;">
+        <h1>Calendar</h1>
+        <div class="card" style="border: 0;">
+            <h3 class="card header" id="monthAndYear">Mont And Year</h3>
+            <table class="table table-bordered table-responsive-sm" id="calendar">
+                <thead>
+                    <tr>
+                        <th>Pazar</th>
+                        <th>Pzrts</th>
+                        <th>Salı</th>
+                        <th>Çrşmb</th>
+                        <th>Prşmb</th>
+                        <th>Cuma</th>
+                        <th>Cmrts</th>
+
+                    </tr>
+                </thead>
+
+                <tbody id="calendar-body"></tbody>
+            </table>
+
+            <div class="form-inline">
+                <button class="btn btn-outline-primary col-sm-6" onclick="previous()">Önceki</button>
+                <button class="btn btn-outline-primary col-sm-6" onclick="next()">Sonraki</button>
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+    <br><br><br><br>
+
+    <div id="saat" style="padding-left : 680px; padding-right: 150px;">
+        <h3>Randevu Saati : </h3>
+        <br>
+
+        <div class="btnler">
+            <td><input type="button" class="btn-success" style="width: 250px; height: 60px; margin: 5px;" id="btn1"
+                    value="8.00 - 9.00" onclick="f1('8.00 - 9.00')"></td>
+            <td><input type="button" class="btn-success" style="width: 250px; height: 60px; margin: 5px;" id="btn2"
+                    value="9.00 - 10.00" onclick="f2('9.00 - 10.00')"></td><br>
+            <td><input type="button" class="btn-success" style="width: 250px; height: 60px; margin: 5px;" id="btn3"
+                    value="10.00 - 11.00" onclick="f3('10.00 - 11.00')"></td>
+            <td><input type="button" class="btn-success" style="width: 250px; height: 60px; margin: 5px;" id="btn4"
+                    value="11.00 - 12.00" onclick="f4('11.00 - 12.00')"></td><br>
+            <td><input type="button" class="btn-success" style="width: 250px; height: 60px; margin: 5px;" id="btn5"
+                    value="13.00 - 14.00" onclick="f5('13.00 - 14.00')"></td>
+            <td><input type="button" class="btn-success" style="width: 250px; height: 60px; margin: 5px;" id="btn6"
+                    value="14.00 - 15.00" onclick="f6('14.00 - 15.00')"></td><br>
+            <td><input type="button" class="btn-success" style="width: 250px; height: 60px; margin: 5px;" id="btn7"
+                    value="15.00 - 16.00" onclick="f7('15.00 - 16.00')"></td>
+            <td><input type="button" class="btn-success" style="width: 250px; height: 60px; margin: 5px;" id="btn8"
+                    value="16.00 - 17.00" onclick="f8('16.00 - 17.00')"></td><br>
+        </div>
+
+
+
+
+        <!-- <table  >
+           
+            <tbody >
+              <tr >
+              
+                <td>9.00 - 10.00</td>
+                </tr><tr>
+                <td>10.00 - 11.00</td>
+                <td>11.00 - 12.00</td>
+              </tr>
+              <tr>
+                <td>13.00 - 14.00</td>
+                <td>14.00 - 15.00</td>
+            </tr><tr>
+                <td>15.00 - 16.00</td>
+                <td>16.00 - 17.00</td>
+              </tr>
+            
+            </tbody >
+          </table> -->
+    </div>
+
+
+    <div style="padding-left : 750px;">
+        <p id="tarih"></p>
+        <p id="saat"></p>
+        <br><br>
+        
+    </div>
+  
+        <form action="/randevuAl" method="POST" style="float: left;">
+            <button type="submit" class= "btn btn-primary" style="margin-left: 800px; width: 200px;" onclick="goster()">Gonder</button>
+            <br> <input  type="text" name="rYili" style="visibility: hidden;"><br>
+            <br> <input type="text" name="rAyi" style="visibility: hidden;"><br>
+            <br> <input  type="text" name="rGunu" style="visibility: hidden;"><br>
+            <br> <input  type="text" name="rSaati" style="visibility: hidden;"><br><br>
+            
+        </form>
+  
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+
+    <script src="../public/js/calendar.js"></script>    
+    
+</body>
+
+</html>

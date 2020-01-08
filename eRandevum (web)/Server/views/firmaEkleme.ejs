@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>eRandevum</title>
+    <link rel="icon" type="image/png" href="../public/img.png">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="baslik">
+        <h1 style="padding-left: 40%;">FİRMA BİLGİLERİNİ GİRİNİZ</h1>
+    </div>
+    <div class="container">
+
+        <form action="/kayitolma/firmaKayit" method="POST">
+            <div class="form-group">
+                <label for="firstname">Firma Adi:</label>
+                <input type="firstname" class="form-control" name="fAd" placeholder="Firma İsmi">
+            </div>
+
+            <div class="form-group">
+                <label for="Lastname">Firma Geçmişi:</label><br>
+                <textarea name="Text1" cols="40" id="Text1" rows="5" style="width: 1110px;"></textarea>
+                <input type="text" class="form-control" name="fGecmisi" >
+            </div>
+            <div class="form-group">
+                <label for="email">Randevu Detayi : </label><br>
+                <textarea name="Text2" id="Text2" cols="40" rows="5" style="width: 1110px;"></textarea>
+                <input type="text" class="form-control" name="rBilgisi" >
+            </div>
+            <div class="form-group">
+                <label for="Password">Calişan Bilgisi :</label><br>
+                <textarea name="Text3" id="Text3" cols="40" rows="5" style="width: 1110px;"></textarea>
+                <input type="text" class="form-control" name="cBilgisi">
+            </div>
+
+            <div class="form-group">
+                <label for="Password">İl : </label>
+                <input type="text" class="form-control" name="il" placeholder="Firma İli">
+            </div>
+            <div class="form-group" id="a">
+                <label for="Telefon">İlçe :</label>
+                <input type="tel" class="form-control phone" name="ilce" placeholder="Firma İlçesi">
+            </div>
+            <div class="form-group">
+                <label for="Sehir">Sokak :</label>
+                <input type="text" class="form-control" name="sokak" placeholder="Firmanın Sokağı">
+            </div>
+
+            <div class="form-group">
+                <label for="no">No :</label>
+                <input type="text" class="form-control" name="no" placeholder="Firmanın Numarası">
+            </div>
+            <div class="form-group">
+                <label for="tel">Telefon :</label>
+                <input type="text" class="form-control" name="tel" placeholder="Firmanın Telefon Numarası">
+            </div>
+            <div class="form-group">
+                <label for="mail">Mail :</label>
+                <input type="email" class="form-control" name="mail" placeholder="Firmanın Mail Adresi">
+            </div>
+            <div class="form-group">
+                <label for="tel">Firma Resmini Yükleyiniz :</label><br>
+                <input type="file" name="dosya" />
+            </div><br>
+            <hr><br>
+            <div>
+                <input type="submit" class="btn btn-primary" onclick="o()"
+                    style="margin-left: 370px; font-style: inherit; font-size: 28px; height: 80px; width: 300px;"
+                    value="Firmayi Kaydet">
+            </div><br><br><br>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+
+        function o() {
+            var t1 = document.getElementById("Text1").value;
+            var t2 = document.getElementById("Text2").value;
+            var t3 = document.getElementById("Text3").value;
+
+            $("input[name *= 'fGecmisi']").val(t1);
+            $("input[name *= 'rBilgisi']").val(t2);
+            $("input[name *= 'cBilgisi']").val(t3);
+
+        }
+
+        function b() {
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>eRandevum</title>
+
+    <script src="../public/public code/log.js"></script>
+
+    <link rel="shortcut icon" href="../public/img.png" type="image/x-icon" />
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">Hakkımızda</h4>
+                        <p class="text-muted">Bu web siteyi randevu alma işlemlerine kolaylık getirilmesi
+                            açısından aşağıda adı bulunan iki genç yazılımcı tarafından oluşturuldu.
+                        </p>
+                        <p class="text-muted">Muhammed DENİZ</p>
+                        <p class="text-muted">Tunay TOKSÖZ</p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">İletişim</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-muted"><img src="../public/twitter.png" alt=""> Bizi Twitterdan
+                                    Takip Edin</a> </li><br>
+                            <li><a href="#" class="text-muted"><img src="../public/facebook.png" alt=""> Bizi
+                                    Facebooktan Beğenin</a></li><br>
+                            <li><a href="#" class="text-muted"><img src="../public/instagram.png" alt=""> Bizi
+                                    İnstagramdan Takip Edin</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-primary">
+            <!--  Ana sayfa resimi   -->
+            <a href="/anaSayfa"><img src="../public/img.png"
+                    style="width: 30px; height: 30px; float: left; padding: 0; margin: 0;"></a>
+            <a href="/anaSayfa" class="navbar-brand d-flex align-items-center">
+                <strong>E-Randevum</strong>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+                aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+    </header>
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h1>Randevu Sistemi Nasıl İşler?</h1>
+            <p class="lead text-muted">Hemen altta firma bilgilerini bulabilirsiniz. Randevu almak için sayfanın en
+                altına gidebilir veya hızlı randevu butonuna basabilirsiniz?
+                Web Sayfamız hakkında düşünce ve şikayetleriniz için "Yardım ve Destek" Sayfasına gidebilirsiniz.
+                <p>
+                    <a href="/randevuAl" class="btn btn-warning my-3"><b>HIZLI RANDEVU AL</b></a>
+                </p>
+        </div>
+    </section>
+
+    <div class="album py-5 bg-light" style="width: 100%;">
+        <div class="row">
+            <div style="padding-left: 40px;" class="col-lg-4">
+                <img src="../public/history.jpg" style="width: 140px; height: 140px; border-radius: 30%;" alt="">
+                <h2 style="color:rgba(0, 100, 240, 0.864)">Firma Geçmişi</h2>
+                <p style="color: black;" id="firmaGecmisi"><%= firmaGecmisi%></p>
+                <p><a class="btn btn-primary" href="#" role="button">Detaylar &raquo;</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img src="../public/calisan.png" style="width: 140px; height: 140px; border-radius: 30%;" alt="">
+                <h2 style="color:rgba(0, 100, 240, 0.864)">Çalışan Bilgisi</h2>
+                <p style="color: black;" id="calisanBilgisi"><%= calisanBilgisi %></p>
+                <p><a class="btn btn-primary" href="#" role="button">Detaylar &raquo;</a></p>
+            </div>
+            <div class="col-lg-4">
+                <img src="../public/yardim.png" style="width: 140px; height: 140px; border-radius: 30%;" alt="">
+                <h2 style="color:rgba(0, 100, 240, 0.864)">Yardım ve Destek</h2>
+                <p style="color: black;">Aklınıza takılan herhangi bir konuda bize ulaşabilir veya fikrinizi
+                    söyleyebilirsiniz...</p>
+                <p><a class="btn btn-primary" href="#" role="button">Detaylar &raquo;</a></p>
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette" style="padding-left: 40px; background: #DDDDDD; width: 100%;">
+            <div class="col-md-8 ">
+                <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">RANDEVU DETAYLARI
+                </h1>
+                <br><br>
+                <p class="lead"><%= randevuDetay %></p>
+            </div>
+            <div class="col-md-4">
+                <img src="../public/firmap1.jpg" style="height: 450px; width:450px;" alt="">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette" style="width: 100%;">
+            <div class="col-md-7 order-md-2 ">
+                <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">ADRES BİLGİLERİ</h1>
+                <br><br>
+                <p class="lead">Firma İli : <%= il%></p>
+                <br>
+                <p class="lead">Firma İlçesi : <%= ilce%></p>
+                <br>
+                <p class="lead">Firma Sokağı : <%= sokak%></p>
+                <br>
+                <p class="lead">Firma Nosu : <%= no%></p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="../public/address2.jpg" style="height: 500px; width:500px; padding-left: 60px;" alt="">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div style="padding-left: 40px; background:#DDDDDD; width: 100%;" class="row featurette">
+            <div class="col-md-8">
+                <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">İLETİŞİM BİLGİLERİ
+                </h1>
+                <br><br>
+                <p class="lead">Firmanın Telefon Numarasi : <%= tel%></p>
+                <br>
+                <p class="lead">Firmanın Mail Adresi : <%= mail%></p>
+                <br>
+                <p class="lead">Firmanın Facebook Adresi :
+                    <%= typeof facebook != 'undefined' ? facebook: ''%>@facebook.com</p>
+            </div>
+            <div class="col-md-4">
+                <img src="../public/call2.jpg" style="height: 500px; width:500px; ;" alt="">
+            </div>
+        </div>
+
+
+    </div>
+
+    </div>
+
+
+    <div style="padding-left: 40px; background: white; border:10px; width: 100%;" class="row featurette">
+        <div class="col-md-8">
+            <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;padding-left: 50%;">
+                RANDEVU ALMA EKRANINA GİT</h1>
+            <p class="lead">Aşğıdaki Randevu Al Butonuna
+                Basarak Bu firmadan Randevu alabilirsiniz... </p>
+
+            </b><br>
+            <hr>
+            <a href="/randevuAl"><button type="button" class="btn btn-warning btn-block"
+                    style="height:50px; margin-left: 200px; font-size: 20px;"><b>RANDEVU
+                        AL</b></button></a>
+            <hr><br><br>
+        </div>
+    </div>
+
+    <br>
+    <div id="yorumlar"></div>
+
+    <div class="card my-4">
+        <h5 class="card-header">Bir Yorum Bırak:</h5>
+        <div class="card-body">
+            <form action="/yorumYap" method="POST">
+                <div class="form-group"></div>
+                    <textarea class="form-control" id="Text1" rows="3"></textarea>
+                    <input type="text" name="i" style="visibility: hidden;">
+                </div>
+                <input type="submit" onclick="y()" class="btn btn-primary" value="Gönder">
+            </form>
+            <hr>
+        </div>
+    </div>
+
+
+
+    <form action="/puanver" method="POST">
+        <input type="text" name="iPuan" id="puan" style="visibility: hidden;">
+
+        <h5>İşyerine Puanınız : </h5><br>
+        <input type="button" class="btn btn-success" onclick="f1(1)" id="btn1" value="1"></button>
+        <input type="button" class="btn btn-success" onclick="f1(2)" id="btn2" value="2"></input>
+        <input type="button" class="btn btn-success" onclick="f1(3)" id="btn3" value="3"></input> 
+        <input type="button" class="btn btn-success" onclick="f1(4)" id="btn4" value="4"></inputn>
+        <input type="button" class="btn btn-success" onclick="f1(5)" id="btn5" value="5"></inputn><br><br>
+        <input type="submit" name="gonder" id="" value="Gönder" class="btn btn-primary" style="padding-top: 10px;">
+
+        <hr>
+
+    </form>
+
+
+
+
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p class="text-muted">muhammeddnz00@gmail.com</p>
+            <p class="text-muted">tunaytoksöz@gmail.com</p>
+
+        </div>
+    </footer>
+    </div>
+
+
+    <script>
+
+        function f1(puan) {
+            $("input[name *= 'iPuan']").val(puan);
+        }
+        function y() {
+            var t1 = document.getElementById("Text1").value;
+            $("input[name *= 'i']").val(t1);
+            $("#yorumlar").append("YORUMUNUZ : "+ t1+" "+"<br>");
+            
+        }
+
+    </script>
+</body>
+
+</html>

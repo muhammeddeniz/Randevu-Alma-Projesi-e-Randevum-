@@ -1,0 +1,161 @@
+{
+    "mest": {
+        "calisan_Bilgileri" : "Firmada 4 aşçı, 1 şef, 5 komi, 1 vale olmak üzere toplamda 11 kişi çalışmaktadir. Özellikle Diaz şefin dikkat çektiği Mest Cafe de müşteriler çalışanlardan oldukça memnun ayrılıyor. ",
+        "firma_Gecmisi" : "Mest Cafe 21 eylül 1998'de Ahmet Raif tarafından kuruldu. Bu günlerde Oğlu Ayhan  Raif Tarafından yönetilern Mest Cafe aynı zamanda 5 şubeye sahiptir. ",
+        "randevu_Detayi" : "Randevularımız Hafta içi sabah 8.00 ile 17.00 arasında bulunmaktadir. Aynı zamanda 12.00 ile 13.00 arasında da randevu vermiyoruz.", 
+        "adres_Bilgileri" : {
+            "il" : "İzmir",
+            "ilce" : "Konak",
+            "sokak" : "9132",
+            "no" : "12"
+        },
+        "iletisim_Bilgileri" : {
+            "tel" : "0212 323 23 32",
+            "email": "mest@gmail.com",
+            "facebook" : "mestCafe"
+        }
+    },
+
+    "hilton": {
+        "calisan_Bilgileri" : "Hilton toplamda 12.000 den fazla elemana sahiptir. Çok fazla şubeye sahip olduğu için 12.000 den fazla elemanla hizmet veriyor olması hiç de şaşırtıcı değil.",
+        "firma_Gecmisi" :"Conrad Hilton, ‘En Muhteşem Otel’ olarak bilinen, New York’taki Waldorf Astoria’yı satın aldı. Onun bağlılığının, liderliğinin ve yenilikçiliğinin bir sonucu olarak bugün Hilton büyük bir dev olmakta.",
+        "randevu_Detayi" : "Randevularımız Hafta içi sabah 8.00 ile 17.00 arasında bulunmaktadir. Aynı zamanda 12.00 ile 13.00 arasında da randevu vermiyoruz.", 
+        "adres_Bilgileri" : {
+            "il" : "İzmir",
+            "ilce" : "Konak",
+            "sokak" : "9132",
+            "no" : "12"
+        },
+        "iletisim_Bilgileri" : {
+            "tel" : "212 66 66",
+            "email": "hilton@gmail.com",
+            "facebook" : "Hilton Türkiye"
+        }
+    },
+
+
+    "batıgöz": {
+        "calisan_Bilgileri" : "Batıgöz Sağlık Grubu sadece Türkiye'de 4.600 çalışan bünyesinde barındırmaktadır. Unutulmamalıdır ki Batı Göz sadece Türkiye'de hizmet vermemektedir.",
+        "firma_Gecmisi" :"2004 yılında İzmir'de kurulan Batıgöz Sağlık Grubu, göz sağlığı alanında kaliteli hizmet anlayışı ile büyümeye devam etmektedir",
+        "randevu_Detayi" : "Randevularımız Hafta içi sabah 8.00 ile 17.00 arasında bulunmaktadir. Aynı zamanda 12.00 ile 13.00 arasında da randevu vermiyoruz.", 
+        "adres_Bilgileri" : {
+            "il" : "İzmir",
+            "ilce" : "Konak",
+            "sokak" : "9132",
+            "no" : "12"
+        },
+        "iletisim_Bilgileri" : {
+            "tel" : "212 22 22",
+            "email": "batigoz@gmail.com",
+            "facebook" : "Batigöz"
+        }
+    },
+
+    "deniz": {
+        "calisan_Bilgileri" : "Firmada 3 aşçı, 2 şef, 6 komi, 3 vale olmak üzere toplamda 14 kişi çalışmaktadir. Özellikle Ahmet şefin dikkat çektiği Mest Cafe de müşteriler çalışanlardan oldukça memnun ayrılıyor. ",
+        "firma_Gecmisi" :"Deniz Restoran 12 ekim 1978'de Ali Keser tarafından kuruldu. Bu günlerde Oğlu Mehmet Keser Tarafından yönetilern Deniz Restoran aynı zamanda 2 şubeye sahiptir. ",
+        "randevu_Detayi" : "Randevularımız Hafta içi sabah 8.00 ile 17.00 arasında bulunmaktadir. Aynı zamanda 12.00 ile 13.00 arasında da randevu vermiyoruz.", 
+        "adres_Bilgileri" : {
+            "il" : "İzmir",
+            "ilce" : "Çankaya",
+            "sokak" : "2432",
+            "no" : "41"
+        },
+        "iletisim_Bilgileri" : {
+            "tel" : "212 98 89",
+            "email": "denizRestoran@gmail.com",
+            "facebook" : "Deniz Restoran"
+        }
+    },
+
+
+    "fenbilimleri": {
+        "calisan_Bilgileri" : "Fen Bilimleri toplamda 2.000 den fazla öğretim Görevlisine sahiptir. Çok fazla şubeye sahip olduğu için 2.000 den fazla elemanla hizmet veriyor olması hiç de şaşırtıcı değil.",
+        "firma_Gecmisi" :"1965 yılında kurulan Fen Bilimleri Dershanesi kuruldu.İstanbul-Beşiktaş’ta tek şube olarak faaliyetini sürdüren Fen Bilimleri,Nazmi ARIKAN tarafından 1997 yılında devralındıktan sonra 1999 yılında Bakırköy’de,2000 yılında Kadıköy’de yeni şubelerini açtı.",
+        "randevu_Detayi" : "Randevularımız Hafta içi sabah 8.00 ile 17.00 arasında bulunmaktadir. Aynı zamanda 12.00 ile 13.00 arasında da randevu vermiyoruz.", 
+        "adres_Bilgileri" : {
+            "il" : "İzmir",
+            "ilce" : "Çankaya",
+            "sokak" : "5644",
+            "no" : "54"
+        },
+        "iletisim_Bilgileri" : {
+            "tel" : "212 43 43",
+            "email": "fenbilileri@gmail.com",
+            "facebook" : "fenbilimleri"
+        }
+    },
+
+
+    "avrupadent": {
+        "calisan_Bilgileri" : "Türkiye'de 2.600 çalışan bünyesinde barındırmaktadır. Unutulmamalıdır ki Batı Göz sadece Türkiye'de hizmet vermemektedir.Çalışanları Genellikle çok memnundur.",
+        "firma_Gecmisi" :"2002 yılında İstanbul'da kurulan Avrupadent , Diş sağlığı alanında kaliteli hizmet anlayışı ile büyümeye devam etmektedir",
+        "randevu_Detayi" : "Randevularımız Hafta içi sabah 8.00 ile 17.00 arasında bulunmaktadir. Aynı zamanda 12.00 ile 13.00 arasında da randevu vermiyoruz.", 
+        "adres_Bilgileri" : {
+            "il" : "İzmir",
+            "ilce" : "Karşıyaka",
+            "sokak" : "922",
+            "no" : "1"
+        },
+        "iletisim_Bilgileri" : {
+            "tel" : "212 12 12",
+            "email": "avrupadent@gmail.com",
+            "facebook" : "AvrupaDent"
+        }
+    },
+
+
+    "mona": {
+        "calisan_Bilgileri" : "Toplamda 421 çalışanı bulunan Mona Psikoloji, genellikle alanında uzman kişilerden oluşan saygın kişilerle hizmet vermektedir. ",
+        "firma_Gecmisi" :"2001 yılında Prof. Dr. Ahmet Berrak tarafından kurulan kurum hızla büyüyerek günümüzde en iyi psikoloji kurumları içinde gösterilmektedir. ",
+        "randevu_Detayi" : "Randevularımız Hafta içi sabah 8.00 ile 17.00 arasında bulunmaktadir. Aynı zamanda 12.00 ile 13.00 arasında da randevu vermiyoruz.", 
+        "adres_Bilgileri" : {
+            "il" : "İzmir",
+            "ilce" : "Buca",
+            "sokak" : "1342",
+            "no" : "43"
+        },
+        "iletisim_Bilgileri" : {
+            "tel" : "212 32 23",
+            "email": "mona@gmial.com",
+            "facebook" : "monaPsikoloji"
+        }
+    },
+
+
+    "mövenpick": {
+        "calisan_Bilgileri" : "Mövenpick toplamda 3.000 den fazla elemana sahiptir. Çok fazla şubeye sahip olduğu sölenemez ve genelde tatil yerlerinde bulunmaktadır.",
+        "firma_Gecmisi" :"Mövenpick ilk olarak Avrupada şubeler açmış  2013 yılından itibaren ise  Türkiye'de hizmet vermeye başlamıştır. İlk kuruluş yılı ise 12 haziran 1933 tür.",
+        "randevu_Detayi" : "Randevularımız Hafta içi sabah 8.00 ile 17.00 arasında bulunmaktadir. Aynı zamanda 12.00 ile 13.00 arasında da randevu vermiyoruz.", 
+        "adres_Bilgileri" : {
+            "il" : "İzmir",
+            "ilce" : "Alsancak",
+            "sokak" : "92",
+            "no" : "34"
+        },
+        "iletisim_Bilgileri" : {
+            "tel" : "212 11 11",
+            "email": "mövenpick@gmail.com",
+            "facebook" : "mövenPick"
+        }
+    },
+
+
+    "tüvtürk": {
+        "calisan_Bilgileri" : "Tüvtürk genel olarak uzmanlardan oluşan 1.100 kişilik bir ekibe sahiptir. Çalışanlarının alanında uzman olması neden bu kadar tercih edildiğini çok güzel açıklıyor.",
+        "firma_Gecmisi" :"2001 yılında İstanbul'da açılan TüvTürk, olarak alanında tek olduğu için hızlıca şubeler açarak Türkiye'nin her yerine yerleşmiş ve araç konusunda uzmanlaşmışlardır. ",
+        "randevu_Detayi" : "Randevularımız Hafta içi sabah 8.00 ile 17.00 arasında bulunmaktadir. Aynı zamanda 12.00 ile 13.00 arasında da randevu vermiyoruz.", 
+        "adres_Bilgileri" : {
+            "il" : "İzmir",
+            "ilce" : "Gaziemir",
+            "sokak" : "332",
+            "no" : "4"
+        },
+        "iletisim_Bilgileri" : {
+            "tel" : "212 44 33",
+            "email": "tüvürk@gmail.com",
+            "facebook" : "TüvTürk"
+        }
+    }
+
+}

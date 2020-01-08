@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+
+    <script src="../public/public code/log.js"></script>
+
+    <link rel="shortcut icon" href="../public//img.png" type="image/x-icon" />
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <title>eRandevum</title>
+
+    <link rel="stylesheet" href="../public/css/styleYetkiliSayfasi.css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <a class="navbar-brand mr-auto mr-lg-0" href="#" style="font-family: Verdana, Geneva, Tahoma, sans-serif; padding-right: 60px; color: aqua;">eRandevum Yetkili Paneli</a>
+        <button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/yetkiliAnaSayfa">Ana Sayfa<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="/randevular">Randevular</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/yorum">Yorumlar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/firmaBilgileri">Firma Bilgileri</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/puan">Puan</a>
+                </li>
+               
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Ayarlar</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Adınızı Değiştirin</a>
+                        <a class="dropdown-item" href="#">Firmayı Siteden Silin</a>
+                        <a class="dropdown-item" href="#">İstek ve Şikayet</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <p id="kullaniciAdi"  style="color: white; padding-right: 25px; padding-top: 15px;"><!-- BURAYA YETKİLİ İSMİ GELECEK -->>></p>
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cikis</button>
+            </form>
+        </div>
+    </nav>
+
+
+
+
+    <div class="mainDiv" style="padding-top: 100px;">
+        <div class="container">
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="./public/bilgi.png" style="margin-left: 83px;" alt="">
+                        <h3>Bilgileri Düzenle</h3>
+
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>İşyerinizin bilgilerini değiştirmek istiyorsanız veya bilgileri güncellemek istiyorsanız bu
+                             Sayfaya Git butonuna basınız.</p>
+                        <a href="#">Sayfaya Git</a>
+                        <p id="temp"><%= temp%></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="./public/yorum.png" style="margin-left: 27px;" alt="">
+                        <h3>Yorumlar</h3>
+
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Bu sayfadan işyeriniz hakkında yapılan yorumları görebilir , uygunsuz bulduğunuz yorumları
+                            admine bildirebilirsiniz.</p>
+                        <a href="#">Sayfaya Git</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="./public/ekle.png" style="margin-left: 50px;" alt="">
+                        <h3>İşyeri Ekle</h3>
+
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Henüz bir işyerinin kullanıcısı değilseniz bu ekrandan işyeri ekleyebilirsiniz. Işyeriniz var
+                            ise bu ekranı kullanamazsınız.</p>
+                        <a href="#">Sayfaya Git</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mainDiv2">
+        <div class="container">
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="./public/puan.png" style="margin-left: 50px;" alt="">
+                        <h3>İşyeri Puanı</h3>
+
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Bu sayfadan işyerinize verilen puanları görebilirsimiz. Bot olduğunu düşündüğünüz kişilerin
+                            puanını admine bildirebilirsiniz.</p>
+                        <a href="#">Sayfaya Git</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="./public/ayarla.png" style="margin-left: 80px;" alt="">
+                        <h3>Randevu Bilgileri</h3>
+
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Bu ekrandan işyerinizin randevu bilgilerini görebilirsiniz. Ayrıca işyerinizden randevu alan
+                            kişilerin listesini de görebilirsiniz.</p>
+                        <a href="#">Sayfaya Git</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="face face1">
+                    <div class="content">
+                        <img src="./public/onayla.png" style="margin-left: 60px;" alt="">
+                        <h3>Randevu Onayla</h3>
+
+                    </div>
+                </div>
+                <div class="face face2">
+                    <div class="content">
+                        <p>Bu ekrandan randevu isteğinde bulunan kişilerin randevusunu onaylayabilir veya
+                            reddebilirsiniz. </p>
+                        <a href="#">Sayfaya Git</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
